@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Loading image -->
+    <div id="loading">
+        <img src="loading.gif" alt="Loading..." width="250" />
+    </div>
+
+    <h1>Hugging Face</h1>
+
+    <!-- Result section -->
+    <div id="result">
+        This is result.
+    </div>
+
+    <!-- Query section -->
+    <label>Query:</label>
+    <textarea id="query" placeholder="I like Monaca">I like Monaca</textarea>
+
+    <!-- buttons -->
+    <button id="btnSentimenLocal">Text Classification (Local model file)</button>
+    <button id="btnSentimentCache">Sentiment Analysis</button>
+
+    <script src="main.js" type="module"></script>
+</body>
+</html>
